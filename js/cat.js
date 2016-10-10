@@ -3,10 +3,10 @@ var kittyCounter = function (){
 
   $(document).ready( function(){
     $('#CatClicker').click(function(e) {
-      var para = $("<p> Times you clicked the cat: "+ counter +"</p>");
-      $("#KittyCounter").append(counter);
-      alert("You clicked the cat! " + counter);
-      counter++;
+      var para = $("<p> Times you clicked the cat: ");
+      $("#KittyCounter").text(counter++);
+      console.log("You clicked the cat! " + counter);
+      
 
     });
   });
